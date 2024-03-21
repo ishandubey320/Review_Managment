@@ -10,7 +10,7 @@ export const loginProfile = async (req, res, next) => {
     const userId = isUserExist._id;
 
     const access_token = await generateAccessToken(userId.toString());
-    res.send(access_token);
+    res.send({ access_token });
   } catch (error) {
     next(error);
   }

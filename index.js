@@ -14,31 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", async (req, res, next) => {
-  res.send("welcome home to za");
-
-  // const profile1 = new Profile({
-  //   user_name: "Ishan",
-  // });
-  // const profile2 = new Profile({
-  //   user_name: "Rishin",
-  //   Role: "Business_Owner",
-  // });
-  // const profile5 = new Profile({
-  //   user_name: "Rudra",
-  //   Role: "Business_Owner",
-  // });
-  // const profile3 = new Profile({
-  //   user_name: "Harshit",
-  // });
-  // const profile4 = new Profile({
-  //   user_name: "Zag_Team",
-  //   Role: "Admin",
-  // });
-  // await profile1.save();
-  // await profile2.save();
-  // await profile3.save();
-  // await profile4.save();
-  // await profile5.save();
+  res.send("welcome to home");
 });
 
 app.use("/auth", authRouter);
